@@ -1,0 +1,10 @@
+import { Suspense } from "react";
+import { AuthScreen } from "@/components/client-flows";
+export const metadata = { title: "Recuperar acesso · PersonaliTatto" };
+export default function Page() {
+  return (
+    <Suspense>
+      <AuthScreen mode="recovery" />
+    </Suspense>
+  );
+}
